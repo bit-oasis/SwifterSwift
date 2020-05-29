@@ -438,7 +438,7 @@ public extension String {
     ///
     /// - Parameter locale: Locale (default is Locale.current)
     /// - Returns: Optional Double value from given string.
-    func double(locale: Locale = .current) -> Double? {
+    func double(locale: Locale = Locale(identifier: "en_US")) -> Double? {
         let formatter = NumberFormatter()
         formatter.locale = locale
         formatter.allowsFloats = true
